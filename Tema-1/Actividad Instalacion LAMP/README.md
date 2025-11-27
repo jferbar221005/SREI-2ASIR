@@ -43,11 +43,16 @@
 
 <img width="670" height="115" alt="image" src="https://github.com/user-attachments/assets/1a211a22-6ee5-4210-98a2-212c5e85a6c4" />
 
-- Indicamos que 
+- Indicamos que no queremos eliminar la base de datos de prueba
 
 <img width="745" height="146" alt="image" src="https://github.com/user-attachments/assets/fdbea41f-4ef2-42d8-824c-66dc42f878e1" />
 
--
+- Recargamos los privilegios las tablas
+
+<img width="668" height="87" alt="image" src="https://github.com/user-attachments/assets/6312d2f9-5fa8-4cd2-88b1-26cc85bbcab7" />
+
+- 
+
 
 
 
