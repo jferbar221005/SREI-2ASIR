@@ -55,8 +55,9 @@
 
 <img width="979" height="368" alt="image" src="https://github.com/user-attachments/assets/24d7b16d-8a74-4b6d-bd4c-0367b26bb927" />
 
-- 
+- Una vez finalice la instalacion, usamos " php -v " para comprobar que lo hemos instalado correctamente
 
+<img width="578" height="118" alt="image" src="https://github.com/user-attachments/assets/bf68af11-18d7-4a25-a341-7e217d31c71b" />
 
 
 
