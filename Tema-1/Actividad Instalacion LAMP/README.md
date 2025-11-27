@@ -51,8 +51,11 @@
 
 <img width="668" height="87" alt="image" src="https://github.com/user-attachments/assets/6312d2f9-5fa8-4cd2-88b1-26cc85bbcab7" />
 
-- 
+- INSTALACION PHP - Instalamos PHP con el comando " apt install php libapache2-mod-php php-mysql "
 
+<img width="979" height="368" alt="image" src="https://github.com/user-attachments/assets/24d7b16d-8a74-4b6d-bd4c-0367b26bb927" />
+
+- 
 
 
 
