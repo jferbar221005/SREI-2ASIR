@@ -39,7 +39,7 @@
 
 <img width="669" height="170" alt="image" src="https://github.com/user-attachments/assets/c827fc37-35cc-4ea9-810e-4b4c755b29bb" />
 
-- 
+- Le indicamos que si queremos logearnos con el root en remoto, para evitar problemas futuros con conexiones
 
 <img width="670" height="115" alt="image" src="https://github.com/user-attachments/assets/1a211a22-6ee5-4210-98a2-212c5e85a6c4" />
 
