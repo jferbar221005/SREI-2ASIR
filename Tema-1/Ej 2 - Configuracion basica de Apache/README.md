@@ -2,7 +2,7 @@
 
 1. Apache utilizará el puerto 81 además del 80
 
-Para ello, modificamos el archivo ports.conf con el siguiente comando "nano /etc/apache2/ports.conf"
+Para ello, modificamos el archivo ports.conf con el siguiente comando "nano /etc/apache2/ports.conf" y añadimos la Directiva "Listen 81"
 
 <img width="690" height="175" alt="image" src="https://github.com/user-attachments/assets/e61c1477-fa39-4851-afd0-7e5ee2a205dc" />
 
@@ -18,9 +18,7 @@ Para ello, modificamos el archivos hosts, con el siguiente comando "nano /etc/ho
 
 3. Cambia la directiva “ServerTokens” para mostrar el nombre del producto.
 
+Nos vamos a la ruta "/etc/apache2/conf-enabled/" y modificamos el archivo "security.conf", modificamos 
 
-
-
-
-
+<img width="715" height="311" alt="image" src="https://github.com/user-attachments/assets/a9810b46-f2f2-4e8b-aabd-03121f20613e" />
 
