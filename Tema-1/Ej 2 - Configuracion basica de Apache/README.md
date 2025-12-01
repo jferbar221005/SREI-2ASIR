@@ -22,4 +22,6 @@ Nos vamos a la ruta "/etc/apache2/conf-enabled/" y modificamos el archivo "secur
 
 <img width="715" height="311" alt="image" src="https://github.com/user-attachments/assets/a9810b46-f2f2-4e8b-aabd-03121f20613e" />
 
+4. Comprueba si se visualiza el pie de página en las páginas generadas por Apache (por ejemplo, en las páginas de error). Cambia el valor de la directiva “ServerSignature” y comprueba que funciona correctamente. 
+
 
