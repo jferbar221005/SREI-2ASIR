@@ -24,4 +24,5 @@ Nos vamos a la ruta "/etc/apache2/conf-enabled/" y modificamos el archivo "secur
 
 4. Comprueba si se visualiza el pie de página en las páginas generadas por Apache (por ejemplo, en las páginas de error). Cambia el valor de la directiva “ServerSignature” y comprueba que funciona correctamente. 
 
+Nos vamos a la ruta "/etc/apache2/conf-enabled/" y modificamos el archivo "security.conf", modificamos el "ServerSignature On" a "ServerSignature Off"
 
