@@ -18,7 +18,8 @@ Para ello, modificamos el archivos hosts, con el siguiente comando "nano /etc/ho
 
 3. Cambia la directiva “ServerTokens” para mostrar el nombre del producto.
 
-Nos vamos a la ruta "/etc/apache2/conf-enabled/" y modificamos el archivo "security.conf", modificamos 
+Nos vamos a la ruta "/etc/apache2/conf-enabled/" y modificamos el archivo "security.conf", modificamos el ServerTokens OS a ServerTokens Prod
 
 <img width="715" height="311" alt="image" src="https://github.com/user-attachments/assets/a9810b46-f2f2-4e8b-aabd-03121f20613e" />
+
 
