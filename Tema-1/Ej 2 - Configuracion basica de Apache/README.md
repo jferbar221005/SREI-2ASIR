@@ -26,3 +26,17 @@ Nos vamos a la ruta "/etc/apache2/conf-enabled/" y modificamos el archivo "secur
 
 Nos vamos a la ruta "/etc/apache2/conf-enabled/" y modificamos el archivo "security.conf", modificamos el "ServerSignature On" a "ServerSignature Off"
 
+<img width="700" height="383" alt="image" src="https://github.com/user-attachments/assets/0ee27b72-0cf3-45cc-ad21-c574658da727" />
+
+Cmprobamos que funciona
+
+<img width="365" height="221" alt="image" src="https://github.com/user-attachments/assets/1100824c-ba71-4a77-a78b-e414c5a2ef67" />
+
+5. Crea un directorio “prueba” y otro directorio “prueba2”. Incluye un par de páginas en cada una de ellas.
+
+Creamos las carpetas dentro de "cd /var/www/" y creamos las dos carpetas "mkdir prueba" y "mkdir prueba2"
+
+<img width="547" height="59" alt="image" src="https://github.com/user-attachments/assets/1ff945ea-7a1c-4a08-8a28-7ae5e57c05cf" />
+
+Creamos las paginas index.html y notas.html en ambas
+
