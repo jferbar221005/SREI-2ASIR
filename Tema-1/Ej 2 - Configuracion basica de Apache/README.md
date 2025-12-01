@@ -40,3 +40,14 @@ Creamos las carpetas dentro de "cd /var/www/" y creamos las dos carpetas "mkdir 
 
 Creamos las paginas index.html y notas.html en ambas
 
+-PRUEBA
+
+<img width="609" height="80" alt="image" src="https://github.com/user-attachments/assets/650a4fd5-9f32-492e-bf33-3ec27f834fba" />
+
+-PRUEBA2
+
+<img width="621" height="80" alt="image" src="https://github.com/user-attachments/assets/b6ba2f4e-740d-45ce-9917-761bf215b1bd" />
+
+
+
+
