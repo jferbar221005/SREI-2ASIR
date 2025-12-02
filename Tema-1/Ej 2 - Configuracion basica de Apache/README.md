@@ -36,17 +36,18 @@ Cmprobamos que funciona
 
 Creamos las carpetas dentro de "cd /var/www/" y creamos las dos carpetas "mkdir prueba" y "mkdir prueba2"
 
-<img width="547" height="59" alt="image" src="https://github.com/user-attachments/assets/1ff945ea-7a1c-4a08-8a28-7ae5e57c05cf" />
+<img width="562" height="237" alt="image" src="https://github.com/user-attachments/assets/410e1877-9a5e-4864-9200-9e30d7c681a0" />
 
-Creamos las paginas index.html y notas.html en ambas
+Creamos las paginas index.html  en ambas
 
 -PRUEBA
 
-<img width="609" height="80" alt="image" src="https://github.com/user-attachments/assets/650a4fd5-9f32-492e-bf33-3ec27f834fba" />
+<img width="521" height="134" alt="image" src="https://github.com/user-attachments/assets/17acddbb-f7a3-4854-ae70-eb7a3839e40b" />
 
 -PRUEBA2
 
-<img width="621" height="80" alt="image" src="https://github.com/user-attachments/assets/b6ba2f4e-740d-45ce-9917-761bf215b1bd" />
+<img width="540" height="143" alt="image" src="https://github.com/user-attachments/assets/ce3d74f0-572e-4a40-959b-81c00c0f6de5" />
+
 
 
 
