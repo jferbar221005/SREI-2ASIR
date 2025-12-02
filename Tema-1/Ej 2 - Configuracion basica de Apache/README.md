@@ -48,8 +48,10 @@ Creamos las paginas index.html  en ambas
 
 <img width="540" height="143" alt="image" src="https://github.com/user-attachments/assets/ce3d74f0-572e-4a40-959b-81c00c0f6de5" />
 
+Ahora, en "/etc/apache2/sites-availables" le creamos un archivo de configuracion para añadir las 2 paginas como VirtualHosts
 
+<img width="711" height="326" alt="image" src="https://github.com/user-attachments/assets/9a09f255-a9d3-4960-a38d-309a37711285" />
 
-
+Modificamos el archivo hosts para poder acceder a ambas paginas desde localhost
 
 
