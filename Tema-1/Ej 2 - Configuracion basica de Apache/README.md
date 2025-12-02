@@ -52,6 +52,15 @@ Ahora, en "/etc/apache2/sites-availables" le creamos un archivo de configuracion
 
 <img width="711" height="326" alt="image" src="https://github.com/user-attachments/assets/9a09f255-a9d3-4960-a38d-309a37711285" />
 
+Realizamos un a2ensite del archivo de configuracion que hemos creado, para habilitar las paginas y sus virtualhosts. El comanda "a2ensite josefb.conf" y reiniciamos apache
+
+<img width="798" height="108" alt="image" src="https://github.com/user-attachments/assets/89f9ae22-f1b0-4448-9662-5bc7a8092155" />
+
+<img width="828" height="46" alt="image" src="https://github.com/user-attachments/assets/9b765cd1-0026-403a-9994-f5bff127b37d" />
+
 Modificamos el archivo hosts para poder acceder a ambas paginas desde localhost
+
+<img width="785" height="175" alt="image" src="https://github.com/user-attachments/assets/14fdf009-266e-46cf-9bfd-01ec119b099d" />
+
 
 
