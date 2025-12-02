@@ -68,7 +68,15 @@ Hacemos un Redirect desde el VirtualHost de prueba a prueba2, para ello, modific
 
 <img width="773" height="209" alt="image" src="https://github.com/user-attachments/assets/fa22ff5d-34ee-44e0-9ed8-7621d8c4d1ac" />
 
+Ahora, probamos a entrar desde http://prueba.intranet, y como podemos ver, nos redirige a http://prueba2.intranet
 
+<img width="463" height="148" alt="image" src="https://github.com/user-attachments/assets/4b00d58f-d18d-4c86-9f69-952d22d43c18" />
+
+7. Es posible redireccionar tan solo una página en lugar de toda la carpeta. Pruébalo.
+
+Si que es posible
+
+Para ello, 
 
 
 
