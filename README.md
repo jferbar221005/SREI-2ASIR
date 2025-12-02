@@ -6,4 +6,5 @@
 |---|---|
 |[Ejercicio 1](/Tema1/Ej1-Instalacion-LAMP/README.md)|Instalación de Apache|
 |[Ejercicio 2](/Tema1/Ej2-Configuracion-basica-de-Apache/README.md)|Configuración básica de Apache|
+|[Ejercicio 5](/Tema1/Ej5-Directiva-Directory/README.md)|Configuración básica de Apache|
 
