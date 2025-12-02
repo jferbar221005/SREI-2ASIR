@@ -76,7 +76,10 @@ Ahora, probamos a entrar desde http://prueba.intranet, y como podemos ver, nos r
 
 Si que es posible
 
-Para ello, 
+Para ello, usamos la siguiente directiva en el archivo .conf de los VirtualHost
+
+<img width="757" height="219" alt="image" src="https://github.com/user-attachments/assets/576d64b5-df5d-492a-95fb-cac41f856ae6" />
+
 
 
 
