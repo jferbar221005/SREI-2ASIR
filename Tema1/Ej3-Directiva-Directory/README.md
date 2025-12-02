@@ -6,16 +6,16 @@ Primero, creamos los directorios dir1 y dir2 en /var/www/
 
 2. Explica qué diferencia existe entre ambos y muestra su equivalencia con la directiva Require:
    
-<Directory /var/www/example1>
-   Order Deny,Allow
-   Deny from All
-   Allow from 192.168.1.100
+<Directory /var/www/example1><br>
+   Order Deny,Allow<br>
+   Deny from All<br>
+   Allow from 192.168.1.100<br>
 </Directory>
 
-<Directory /var/www/example1>
-   Order Allow,Deny
-   Deny from All
-   Allow from 192.168.1.100
+<Directory /var/www/example1><br>
+   Order Allow,Deny<br>
+   Deny from All<br>
+   Allow from 192.168.1.100<br>
 </Directory
 
 Esta directiva establece el orden en que se evalúan las reglas y determina el comportamiento por defecto. La regla que se evalúa al final es la que prevalece si hay conflicto.
