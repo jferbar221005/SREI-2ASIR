@@ -82,6 +82,6 @@ Para ello, usamos la siguiente directiva en el archivo .conf de los VirtualHost
 
 8. Usa la directiva userdir
 
-Primero habilitamos 
+Primero habilitamos el modulo userdir "a2enmod userdir"
 
 
