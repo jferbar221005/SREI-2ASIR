@@ -82,6 +82,32 @@ Para ello, usamos la siguiente directiva en el archivo .conf de los VirtualHost
 
 8. Usa la directiva userdir
 
-Primero habilitamos el modulo userdir "a2enmod userdir"
+Primero habilitamos el modulo userdir "a2enmod userdir" y reiniciamos apache
+
+<img width="833" height="119" alt="image" src="https://github.com/user-attachments/assets/0c13e471-f2aa-4f18-b0ce-86e5cecfba63" />
+
+9. Usa la directiva alias para redireccionar a una carpeta dentro del directorio de usuario.
+
+Añadimos la siguiente directiva al archivo userdir.conf y ya tendremoa habilitados los alias
+
+<img width="795" height="291" alt="image" src="https://github.com/user-attachments/assets/7304937a-2896-417a-bf17-6fbe413b4ecc" />
+
+10. ¿Para qué sirve la directiva Options y dónde aparece. Comprueba si apache indexa los directorios. Si es así, ¿cómo lo desactivamos?
+
+La directiva Options controla qué características del servidor están disponibles en un directorio específico (por ej. seguir enlaces simbólicos, ejecutar CGI, listar archivos).
+
+Su ubicación se define generalmente dentro del bloque <Directory> en el archivo de configuración del sitio (/etc/apache2/sites-available/tu-sitio.conf).
+
+*Para evitar la exposición de archivos sensibles se debe utilizar el parámetro -Indexes
+
+<Directory /var/www/prueba>
+    # -Indexes: Desactiva el listado de archivos
+    # +FollowSymLinks: Permite seguir enlaces simbólicos (recomendado)
+    Options -Indexes +FollowSymLinks
+    
+    AllowOverride All
+    Require all granted
+</Directory>
+
 
 
