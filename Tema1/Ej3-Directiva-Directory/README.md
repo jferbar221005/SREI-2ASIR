@@ -20,6 +20,8 @@ Primero, creamos los directorios dir1 y dir2 en /var/www/
 
 Esta directiva establece el orden en que se evalúan las reglas y determina el comportamiento por defecto. La regla que se evalúa al final es la que prevalece si hay conflicto.
 
+*A partir de aqui, todo se realizara sobre el archivo "/etc/apache2/apache2.conf"
+
 3. Para dir1
 
 - Permite el acceso de las peticiones provenientes de 10.3.0.100
