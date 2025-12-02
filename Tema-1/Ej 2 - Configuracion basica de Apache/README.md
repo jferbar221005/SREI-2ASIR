@@ -14,7 +14,7 @@ Probamos a entrar a localhost desde el puerto 81 que hemos configurado
 
 Para ello, modificamos el archivos hosts, con el siguiente comando "nano /etc/hosts"
 
-<img width="646" height="247" alt="image" src="https://github.com/user-attachments/assets/8acead33-901b-48ed-ae1b-208f53f73b08" />
+<img width="905" height="238" alt="image" src="https://github.com/user-attachments/assets/65e539cd-7535-467a-906b-2835f7b2e97c" />
 
 3. Cambia la directiva “ServerTokens” para mostrar el nombre del producto.
 
@@ -47,6 +47,7 @@ Creamos las paginas index.html y notas.html en ambas
 -PRUEBA2
 
 <img width="621" height="80" alt="image" src="https://github.com/user-attachments/assets/b6ba2f4e-740d-45ce-9917-761bf215b1bd" />
+
 
 
 
