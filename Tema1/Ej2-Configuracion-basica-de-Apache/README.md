@@ -62,5 +62,13 @@ Modificamos el archivo hosts para poder acceder a ambas paginas desde localhost
 
 <img width="785" height="175" alt="image" src="https://github.com/user-attachments/assets/14fdf009-266e-46cf-9bfd-01ec119b099d" />
 
+6. Redirecciona el contenido de la carpeta "prueba" hacia "prueba2"
+
+Hacemos un Redirect desde el VirtualHost de prueba a prueba2, para ello, modificamos el archivo de configuracion creado anteriormente "/etc/apache2/sites-available/josefb.conf"
+
+<img width="773" height="209" alt="image" src="https://github.com/user-attachments/assets/fa22ff5d-34ee-44e0-9ed8-7621d8c4d1ac" />
+
+
+
 
 
