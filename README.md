@@ -9,7 +9,5 @@
 |[Ejercicio 5](/Tema1/Ej5-Directiva-Directory/README.md)|Directiva Directory|
 |[Ejercicio 7](/Tema1/Ej7-Reescritura/README.md)|Reescritura|
 |[Ejercicio 8](/Tema1/Ej8-VirtualHosts/README.md)|VirtualHosts|
-|[Ejercicio 9.1](/Tema1/EJ9/Ej9.1-Authetication/README.md)|Authetication|
-|[Ejercicio 9.2](/Tema1/EJ9/Ej9.2-Authetication-Digest/README.md)|Authetication Digest|
-|[Ejercicio 9.3](/Tema1/EJ9/Ej9.3-Authetication-MYSQL/README.md)|Authetication MySQL|
+|[Ejercicio 9](/Tema1/Ej9-Authetication/README.md)|Authetication|
 |[Ejercicio 10](/Tema1/Ej10-SSL/README.md)|VirtualHosts|
