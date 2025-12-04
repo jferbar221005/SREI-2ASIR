@@ -49,3 +49,14 @@ Resultado:
 - Si estás en otro PC (no localhost): Apache te pedirá contraseña. Si te validas como usuario1 (que es del grupo1), te dejará entrar.
 - Es útil para permitir a los administradores entrar rápido desde la red interna, pero forzar contraseña a los que vienen de fuera.
 
+** Antes de reiniciar apache, habilitamos el modulo "sudo a2enmod authz_groupfile"**
+
+6.En el directorio privado2 haz que sólo sea accesible desde el localhost, y estudia cómo se comporta la autorización si ponemos: satisfy any, satisfy all
+
+- Reiniciamos apache2 y probamos a entrar desde una IP externa (Otro equipo), como podemos ver, nos pide iniciar sesion
+
+<img width="911" height="296" alt="image" src="https://github.com/user-attachments/assets/0c18fe55-8e46-4269-916c-0ae2a802f0a5" />
+
+- Y si intentamos entrar desde la Vm, nos concede acceso sin credenciales
+
+<img width="691" height="159" alt="image" src="https://github.com/user-attachments/assets/14ec9890-f02c-433d-9211-551b3b29d8f9" />
