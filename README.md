@@ -10,4 +10,4 @@
 |[Ejercicio 7](/Tema1/Ej7-Reescritura/README.md)|Reescritura|
 |[Ejercicio 8](/Tema1/Ej8-VirtualHosts/README.md)|VirtualHosts|
 |[Ejercicio 9](/Tema1/Ej9-Authetication/README.md)|Authetication|
-|[Ejercicio 10](/Tema1/Ej10-SSL/README.md)|VirtualHosts|
+|[Ejercicio 10](/Tema1/Ej10-SSL/README.md)|SSL|
