@@ -9,5 +9,5 @@
 |[Ejercicio 5](/Tema1/Ej5-Directiva-Directory/README.md)|Directiva Directory|
 |[Ejercicio 7](/Tema1/Ej7-Reescritura/README.md)|Reescritura|
 |[Ejercicio 8](/Tema1/Ej8-VirtualHosts/README.md)|VirtualHosts|
-|[Ejercicio 9](/Tema1/Ej9-Authetication/README.md)|Authetication|
+|[Ejercicio 9](/Tema1/Ej9-Authetication/README.md)|Authentication|
 |[Ejercicio 10](/Tema1/Ej10-SSL/README.md)|SSL|
