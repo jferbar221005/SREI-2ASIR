@@ -14,4 +14,4 @@
 
 |Trabajo trimestral - Servidores Web|
 |------|
-|[Ejercicio 1](/Tema1/TrabajoTrimestral/README.md)|Práctica Servidores web 1º trimestre|
+|[Práctica Servidores web 1º trimestre](/Tema1/TrabajoTrimestral/README.md)|
