@@ -47,9 +47,33 @@ Asignamos el propietario a www-data con "sudo chown -R www-data:www-data /var/ww
 
 Lo siguiente es crear su VirtualHost, para ello, nos vamos a "cd /etc/apache2/sites-available/" y creamos el archivo centro.conf en el que se incluira lo siguiente "sudo nano centro.conf":
 
-<img width="760" height="207" alt="image" src="https://github.com/user-attachments/assets/3ad97f88-951e-4ff7-9025-a9fc187741e1" />
+<img width="747" height="204" alt="image" src="https://github.com/user-attachments/assets/16622778-82ac-4d96-972b-81de2853ed4c" />
 
 Por ultimo, habiltamos el sitio con "sudo a2ensite centro.conf" y una vez hecho, recargamos apache2 con "sudo systemctl reload apache2"
 
 <img width="784" height="129" alt="image" src="https://github.com/user-attachments/assets/3a6f0516-bf59-4bdd-9046-148c62497dda" />
+
+Como podemos ver, wordpress estara instalado correctamente
+
+<img width="1918" height="812" alt="image" src="https://github.com/user-attachments/assets/3aeb116e-95b6-4cb4-91a1-f26f9fac7a2a" />
+
+Ahora, procedemos a configurar Wordpress, en el paso anterior elegimos el idioma, ahora, conectamos Wordpress con la BD
+
+<img width="799" height="741" alt="image" src="https://github.com/user-attachments/assets/39eefe45-295b-4c3b-9592-5ddc067118ab" />
+
+Una vez hemos conectado la BD, pinchamos en "Realizar la instalacion"
+
+<img width="831" height="320" alt="image" src="https://github.com/user-attachments/assets/54defd9f-5779-491d-92d2-e7a9e4d49606" />
+
+Configuramos nuestro sitio
+
+<img width="720" height="811" alt="image" src="https://github.com/user-attachments/assets/afb31b18-0557-4573-9829-d8475891d7aa" />
+
+Ahora, accedemos a wordpress con las credenciales configuradas
+
+<img width="392" height="555" alt="image" src="https://github.com/user-attachments/assets/83ac062e-9660-409f-9759-aaecdc0bcad9" />
+
+Ya tendremos WP instalado y confiugurado correctamente
+
+<img width="1911" height="910" alt="image" src="https://github.com/user-attachments/assets/36e61bb0-a6b7-48e5-8281-8ef0f3fd8618" />
 
