@@ -131,3 +131,37 @@ Ahora, generamos las estadisticas con el siguiente comando "sudo /usr/lib/cgi-bi
 <img width="1066" height="294" alt="image" src="https://github.com/user-attachments/assets/1bb2b1ae-fcb3-4358-a38b-cd3c2678ff83" />
 
 - Fase 6: Segundo Servidor (Nginx) y phpMyAdmin
+
+Primero, instalamos nginx y para poder usar phpmyadmin tambien intslamos php-fpm "sudo apt install nginx php-fpm"
+
+<img width="703" height="219" alt="image" src="https://github.com/user-attachments/assets/0161f562-477a-4093-a8aa-94abd14d8c50" />
+
+Modificamos el archivo del sitio por defecto "sudo nano /etc/nginx/sites-available/default" y cambiamos las lineas donde se define el puerto de escucha y tambien configuramos las soguientes lineas para el procesamiento php
+
+<img width="838" height="130" alt="image" src="https://github.com/user-attachments/assets/a6195ff8-117d-405e-a420-3986390d22b6" />
+
+<img width="934" height="473" alt="image" src="https://github.com/user-attachments/assets/c3dd515e-7691-47c2-b6e7-f5924064f8e1" />
+
+A continuacion, instalamos phpmyadmin "sudo apt install phpmyadmin"
+
+<img width="1242" height="537" alt="image" src="https://github.com/user-attachments/assets/8d5479bb-0787-4017-9792-06e6a8f3b47a" />
+
+No seleccionamos ninguno de los servidores web de la lista
+
+<img width="992" height="254" alt="image" src="https://github.com/user-attachments/assets/b8963844-fb9b-4d45-9299-8441dd408e28" />
+
+Le indicamos que si queremos configurar la BD
+
+<img width="1228" height="340" alt="image" src="https://github.com/user-attachments/assets/6c776ef5-3dec-4510-96c3-89163a3e0239" />
+
+Asignamos contraseña a PHPMyAdmin
+
+<img width="1202" height="238" alt="image" src="https://github.com/user-attachments/assets/b364be57-b249-4df5-ac0b-8aa3894ee9ec" />
+
+Para vincular phpmyadmin a nginx usaremos enlaces simbolicos para ello, usaremos el siguiente comando "sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin" y una vez realizado, recargamos nginx "sudo systemctl restart nginx"
+
+<img width="781" height="67" alt="image" src="https://github.com/user-attachments/assets/254b7428-8fd7-4d0c-9133-dac1c96ca63b" />
+
+Una vez realizdo todo el proceso accedemos al dominio configurado/phpmyadmin "http://servidor2.centro.intranet/phpmyadmin/" y como podemos ver, podemos acceder al panel de PHPMyAdmin
+
+<img width="1297" height="578" alt="image" src="https://github.com/user-attachments/assets/0038c76a-91b6-4ce7-be4e-5800f26592fa" />
