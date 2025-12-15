@@ -101,6 +101,7 @@ Creamos el archivo VirtualHost dentro del directorio departamentos "sudo nano /e
 
 Por ultimo habilitamos el sitio y recargamos apache "sudo a2ensite departamentos.conf /// sudo systemctl reload apache2"
 
+Fase
 <img width="795" height="121" alt="image" src="https://github.com/user-attachments/assets/65848906-61e8-4dbe-98c7-42b6f915a195" />
 
 Como podemos ver, el servicio, esta funcioanando plenamente
