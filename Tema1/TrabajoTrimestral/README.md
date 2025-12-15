@@ -101,9 +101,33 @@ Creamos el archivo VirtualHost dentro del directorio departamentos "sudo nano /e
 
 Por ultimo habilitamos el sitio y recargamos apache "sudo a2ensite departamentos.conf /// sudo systemctl reload apache2"
 
-Fase
 <img width="795" height="121" alt="image" src="https://github.com/user-attachments/assets/65848906-61e8-4dbe-98c7-42b6f915a195" />
 
 Como podemos ver, el servicio, esta funcioanando plenamente
 
 <img width="642" height="186" alt="image" src="https://github.com/user-attachments/assets/ebdd4685-f307-4df0-bc59-f0d99efa5968" />
+
+- Fase 5: Estadísticas con AWStats
+
+Primero, instalamos AWStat con "sudo apt install awstats"
+
+<img width="711" height="215" alt="image" src="https://github.com/user-attachments/assets/d6374e30-fa89-4989-995b-569e0d3fc983" />
+
+Ahora, habilitamos el modulo cgi en apache y lo recargamos "sudo a2enmod cgi /// sudo systemctl reload apache2"
+
+<img width="558" height="133" alt="image" src="https://github.com/user-attachments/assets/c4badfa6-5aff-47c2-97fb-47424db226b7" />
+
+A continuacion, creamos un archivo de configuracion de awstats para nuestro dominio, para ello, "sudo cp /etc/awstats/awstats.conf /etc/awstats/awstats.centro.intranet.conf" para copiarnos el archivo conf
+
+<img width="951" height="36" alt="image" src="https://github.com/user-attachments/assets/cfec45e4-2937-47bc-ad0b-68169824b2bc" />
+
+Editamos el archivo y añadimos las siguientes directivas " LogFile="/var/log/apache2/centro_access.log" y SiteDomain="centro.intranet" "
+
+<img width="903" height="118" alt="image" src="https://github.com/user-attachments/assets/40feebed-9550-42f6-805c-ed6dd093dac2" />
+<img width="888" height="91" alt="image" src="https://github.com/user-attachments/assets/3040f800-0373-43ee-98c3-83fee7b2b895" />
+
+Ahora, generamos las estadisticas con el siguiente comando "sudo /usr/lib/cgi-bin/awstats.pl -config=centro.intranet -update"
+
+<img width="1066" height="294" alt="image" src="https://github.com/user-attachments/assets/1bb2b1ae-fcb3-4358-a38b-cd3c2678ff83" />
+
+- Fase 6: Segundo Servidor (Nginx) y phpMyAdmin
