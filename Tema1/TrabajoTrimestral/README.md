@@ -77,3 +77,32 @@ Ya tendremos WP instalado y confiugurado correctamente
 
 <img width="1911" height="910" alt="image" src="https://github.com/user-attachments/assets/36e61bb0-a6b7-48e5-8281-8ef0f3fd8618" />
 
+- Fase 4: Aplicación Python con WSGI (departamentos.centro.intranet)
+
+Primero, instalamos el modulo WSGI "sudo apt install libapache2-mod-wsgi-py3" 
+
+<img width="738" height="138" alt="image" src="https://github.com/user-attachments/assets/83c8a7bc-f1a0-4b26-81b5-ad73dcc05060" />
+
+Ahora, creamos el directorio de la app web, se alojara en /var/ww/departamentos "sudo mkdir -p /var/www/departamentos"
+
+sudo mkdir -p /var/www/departamentos
+
+A continuacion, dentro del directorio departamentos, creamos el archivo app.py donde estara nuestra app de python "sudo nano app.py"
+
+<img width="889" height="183" alt="image" src="https://github.com/user-attachments/assets/5712a2d0-88ca-43f2-a572-c27864584919" />
+
+Lo siguiente es proteger la app con un htpasswd, en mi caso, añadire al htpasswd el usuario profe y contraseña Temporal01 "sudo htpasswd -c /etc/apache2/.htpasswd profe"
+
+<img width="879" height="111" alt="image" src="https://github.com/user-attachments/assets/25f1340b-1c64-4020-8073-129f6c275b5c" />
+
+Creamos el archivo VirtualHost dentro del directorio departamentos "sudo nano /etc/apache2/sites-available/departamentos.conf"
+
+<img width="747" height="394" alt="image" src="https://github.com/user-attachments/assets/d7faff24-01db-4d19-97ff-8ba2ad623b96" />
+
+Por ultimo habilitamos el sitio y recargamos apache "sudo a2ensite departamentos.conf /// sudo systemctl reload apache2"
+
+<img width="795" height="121" alt="image" src="https://github.com/user-attachments/assets/65848906-61e8-4dbe-98c7-42b6f915a195" />
+
+Como podemos ver, el servicio, esta funcioanando plenamente
+
+<img width="642" height="186" alt="image" src="https://github.com/user-attachments/assets/ebdd4685-f307-4df0-bc59-f0d99efa5968" />
