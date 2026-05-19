@@ -28,3 +28,9 @@
 |[Ejercicio 4](/Tema3/Ej4-Almacenamiento/README.md)|Almacenamiento en Docker|
 |[Ejercicio 5](/Tema3/Ej5-DockerCompose/README.md)|Docker Compose|
 |[Ejercicio 6](/Tema3/Ej6-CreacionImagenes/README.md)|Creacion de Imagenes|
+
+## [AWS](/AWS/)
+
+|Ejercicio|Descripción|
+|---|---|
+|[Practica AWS](/AWS/PracticaAWS/README.md)|Conceptos Basicos de Docker|
