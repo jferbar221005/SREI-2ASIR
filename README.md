@@ -17,10 +17,8 @@
 |[Práctica Servidores web 1º trimestre](/Tema1/TrabajoTrimestral/README.md)|
 |[Práctica Servidores web 2º trimestre](/Tema1/TrabajoTrimestral2/README.md)|
 
-## [Tema 2 - DNS](/Tema2/)
+## [Tema 3 - Docker](/Tema3/)
 
 |Ejercicio|Descripción|
 |---|---|
-|[Ejercicio 5](/Tema2/Ej5-Cache&Forwarding/README.md)|Instalación de Apache|
-|[Ejercicio 6](/Tema2/Ej6-MasterDNS/README.md)|Configuración básica de Apache|
-|[Ejercicio 8](/Tema2/Ej8-Subdominios/README.md)|Directiva Directory|
+|[Ejercicio 5](/Tema3/Ej0-Introduccion/README.md)|Instalación de Apache|
