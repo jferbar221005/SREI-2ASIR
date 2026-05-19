@@ -5,7 +5,7 @@
 |Trabajo trimestral - Servidores Web|
 |------|
 |[Práctica Servidores web 1º trimestre](/Tema1/TrabajoTrimestral/README.md)|
-|[Práctica Servidores web 2º trimestre](/Tema1/TrabajoTrimestral2/README.md)|
+|[Práctica Alojamiento web 2º trimestre](/Tema1/TrabajoTrimestral2/README.md)|
 
 ## [Tema 1 - Servidores Web](/Tema1/)
 
