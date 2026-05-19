@@ -159,54 +159,41 @@ Para comprobar que se ha montado correctamente, utilizamos el comando `df -h`:
 
 Nos situamos en la raíz del servidor web (`/var/www/html`) y descargamos la última versión de WordPress:
 
-> 📷 **[Captura 37: Descarga de WordPress mediante `wget`]**
-> <img width="963" height="331" alt="image" src="https://github.com/user-attachments/assets/0bfea48a-dba7-48f1-a984-49c1ffe9bd04" />
+<img width="1406" height="437" alt="image" src="https://github.com/user-attachments/assets/a330306a-76c1-47f4-9ad1-dfeac97bb77a" />
 
 Descomprimimos el archivo descargado:
 
-> 📷 **[Captura 38: Extracción de los archivos de WordPress con `tar`]**
-> <img width="577" height="144" alt="image" src="https://github.com/user-attachments/assets/48d78d76-83c7-4cfb-86ff-84e8425cd86e" />
+<img width="690" height="92" alt="image" src="https://github.com/user-attachments/assets/aec87abc-4953-4de2-abac-255eae2e5253" />
 
 Para interactuar con nuestra base de datos RDS desde la terminal de la instancia, instalamos el cliente de MySQL (`mariadb-client` o similar):
 
-> 📷 **[Captura 39: Instalación del cliente MySQL en la instancia]**
-> <img width="998" height="324" alt="image" src="https://github.com/user-attachments/assets/24df98c0-3c75-41e5-9108-0a70c8dce4a6" />
+<img width="1212" height="147" alt="image" src="https://github.com/user-attachments/assets/b0d89d93-55c8-4889-a92e-aa008165ee4c" />
 
-*Nota de resolución de problemas:* Al intentar conectar a la base de datos arrojaba un error de certificado SSL. Para solucionarlo, tuvimos que descargar el certificado global de Amazon RDS y apuntar a él en nuestra cadena de conexión MySQL:
+*Nota de resolución de problemas:* Al intentar conectar a la base de datos arrojaba un error de certificado SSL. Para solucionarlo, tenemos que descargar el certificado global de Amazon RDS y apuntar a él en nuestra cadena de conexión MySQL:
 
-> 📷 **[Captura 40: Descarga del certificado RDS y conexión exitosa a MySQL]**
-> <img width="1101" height="577" alt="image" src="https://github.com/user-attachments/assets/0e2d8762-5d95-4950-ab06-dca346ffe6df" />
+<img width="1451" height="142" alt="image" src="https://github.com/user-attachments/assets/fd1da00a-f1b4-4cda-b894-c38aa6f4ae69" />
+
+Conectamos el cliente mysql a la BD:
+
+<img width="1450" height="365" alt="image" src="https://github.com/user-attachments/assets/06c14115-1cc0-4f36-802f-45d9774e6d9b" />
 
 Ya dentro de MySQL, preparamos el entorno para WordPress creando su base de datos dedicada, su usuario y otorgándole los permisos necesarios:
 
-> 📷 **[Captura 41: Comandos SQL para crear la DB y el usuario de WordPress]**
-> <img width="721" height="268" alt="image" src="https://github.com/user-attachments/assets/68aeec18-c85d-46d9-954a-9742c69d3deb" />
-
-*Segunda nota de resolución de problemas:* En este punto, no era posible acceder mediante el navegador. Revisando la infraestructura, detecté que el Grupo de Seguridad de RDS no estaba correctamente configurado para permitir las peticiones de la instancia. Una vez editado, el problema quedó solucionado:
-
-> 📷 **[Captura 42: Corrección en las reglas del Grupo de Seguridad de RDS]**
-> <img width="1629" height="497" alt="image" src="https://github.com/user-attachments/assets/f7e18172-3e1b-424d-ab28-11525114378f" />
+<img width="952" height="357" alt="image" src="https://github.com/user-attachments/assets/29d7355e-cc77-46fd-8af4-48639d7b25ed" />
 
 Con la red y la base de datos funcionando, accedemos a la IP de la máquina por el navegador y nos recibe el asistente de configuración de WordPress:
 
-> 📷 **[Captura 43: Pantalla de bienvenida de la instalación de WordPress]**
-> <img width="1101" height="689" alt="image" src="https://github.com/user-attachments/assets/666a18b3-fad0-4a45-bbe5-acc5c82c8da1" />
+<img width="972" height="817" alt="image" src="https://github.com/user-attachments/assets/e1835a81-c2e5-48bd-bc94-f673d984a650" />
 
 Al introducir las credenciales de la base de datos, es muy importante recordar que **no usaremos 'localhost'**. Debemos introducir el *Endpoint* (DNS) que nos proporciona nuestra base de datos RDS:
 
-> 📷 **[Captura 44: Formulario de credenciales con el Endpoint de RDS]**
-> <img width="741" height="525" alt="image" src="https://github.com/user-attachments/assets/0ba76886-b84b-4673-b275-c3dc41332117" />
+<img width="1100" height="878" alt="image" src="https://github.com/user-attachments/assets/447ae775-7c9c-4f47-81d5-bb539b810752" />
 
 WordPress puede solicitarnos crear el archivo `wp-config.php` manualmente si no tiene permisos de escritura. Una vez creado en el servidor con el código proporcionado, la instalación puede continuar. Rellenamos los datos del sitio y finalizamos:
 
-> 📷 **[Captura 45: Configuración manual de wp-config.php e instalación del sitio]**
-> <img width="828" height="883" alt="image" src="https://github.com/user-attachments/assets/b45711bf-4a01-40bb-bec2-be388b648007" />
->
-> 📷 **[Captura 46: Mensaje de "¡Lo lograste!" de WordPress]**
-> <img width="744" height="292" alt="image" src="https://github.com/user-attachments/assets/77f761b7-3ba7-4b28-bf27-1e26683c4a34" />
->
-> 📷 **[Captura 47: Panel de control del administrador de WordPress (Dashboard)]**
-> <img width="1232" height="718" alt="image" src="https://github.com/user-attachments/assets/bc15e2de-4256-4094-99ec-9e3f1097d0d2" />
+<img width="1053" height="677" alt="image" src="https://github.com/user-attachments/assets/7c2cb16a-aa4b-49a9-a5a9-4ce044fd8874" />
+
+<img width="1143" height="686" alt="image" src="https://github.com/user-attachments/assets/f8989327-d09a-4468-b2c1-2f6b6b43fcab" />
 
 ---
 
@@ -216,25 +203,21 @@ El último paso arquitectónico es asegurar que los archivos subidos a la web (i
 
 Nos desplazamos al directorio de WordPress (`cd /var/www/html/wordpress`). Como medida de seguridad, renombramos la carpeta actual `wp-content` para hacer una copia de seguridad:
 
-> 📷 **[Captura 48: Comando de renombrado/backup de wp-content a wp-content-old]**
-> <img width="733" height="57" alt="image" src="https://github.com/user-attachments/assets/9c79b8a0-ce43-4f22-ac29-dba5fa2b53d3" />
+<img width="900" height="52" alt="image" src="https://github.com/user-attachments/assets/8f03d213-d5c9-4aa8-ad3a-a502ec900347" />
 
 Creamos un nuevo directorio `wp-content` totalmente vacío:
 
-> 📷 **[Captura 49: Creación del nuevo directorio wp-content con `mkdir`]**
-> <img width="649" height="498" alt="image" src="https://github.com/user-attachments/assets/482f4ae2-47ad-4d4e-b951-3baee59d23f4" />
+<img width="761" height="48" alt="image" src="https://github.com/user-attachments/assets/9c84fd24-56a9-42f4-9277-999502e52bd7" />
 
-A continuación, ejecutamos el comando de montaje de EFS (el mismo que probamos en el paso 5), pero esta vez apuntándolo específicamente a nuestro nuevo directorio `/var/www/html/wordpress/wp-content`:
+A continuación, ejecutamos el comando de montaje de EFS (el mismo que probamos en el paso 5), pero esta vez apuntándolo específicamente a nuestro nuevo directorio `/var/www/html/wordpress/wp-content`: 
+*Importante antes desmontar EFS del sistema, para luego montar en la carpeta wp-content*
 
-> 📷 **[Captura 50: Montaje del EFS sobre la ruta de wp-content]**
-> <img width="1101" height="72" alt="image" src="https://github.com/user-attachments/assets/d07e4222-9470-480c-be12-3c331f01d285" />
+<img width="1456" height="462" alt="image" src="https://github.com/user-attachments/assets/683be723-49cb-4ec6-b7b2-a825b883c2db" />
 
 Una vez montado, debemos restaurar los datos copiando todo el contenido de nuestra carpeta de respaldo (`wp-content-old`) a la nueva carpeta montada. Finalmente, aplicamos los permisos correctos (`chown -R www-data:www-data`) para que Apache pueda leer y escribir sin problemas:
 
-> 📷 **[Captura 51: Copia de archivos y asignación de propietario www-data]**
-> <img width="811" height="76" alt="image" src="https://github.com/user-attachments/assets/2d01601a-827f-43eb-8102-3441d0385c33" />
+<img width="993" height="75" alt="image" src="https://github.com/user-attachments/assets/4dff9c4d-04a4-481e-9e5b-af392b88091b" />
 
 Podemos ejecutar `df -h` una vez más para verificar que el punto de montaje está trabajando correctamente sobre la carpeta designada:
 
-> 📷 **[Captura 52: Verificación final del sistema de archivos con `df -h`]**
-> <img width="1076" height="436" alt="image" src="https://github.com/user-attachments/assets/bd53c26c-4db9-4888-9560-e986355af36d" />
+<img width="1432" height="395" alt="image" src="https://github.com/user-attachments/assets/3452474f-4931-4dc7-b088-2f412ccd3db1" />
