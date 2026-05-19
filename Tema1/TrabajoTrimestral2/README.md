@@ -129,35 +129,29 @@ Seleccionamos la instancia EC2 destino y pulsamos en conectar:
 
 ## 5. Configuración del Almacenamiento Compartido (EFS)
 
-Para gestionar los archivos multimedia de WordPress de manera escalable, utilizaremos Amazon Elastic File System (EFS). Nos dirigimos al servicio **EFS** y creamos un nuevo sistema de archivos.
+Para gestionar los archivos multimedia de WordPress de manera escalable, utilizaremos Amazon Elastic File System (EFS). Nos dirigimos al servicio **EFS** y creamos un nuevo sistema de archivos. Importante unir este EFS a el vpc donde se encuentra el EC
 
-> 📷 **[Captura 31: Creación del Elastic File System]**
-> <img width="818" height="829" alt="image" src="https://github.com/user-attachments/assets/222cb4c2-3198-4c1e-a1bc-a240c5f4da20" />
+<img width="816" height="832" alt="image" src="https://github.com/user-attachments/assets/015f0383-5cbd-452f-8815-54262e629f1a" />
 
 Verificamos en el panel que el estado del EFS indique que está disponible:
 
-> 📷 **[Captura 32: Panel de EFS mostrando el sistema creado]**
-> <img width="1578" height="338" alt="image" src="https://github.com/user-attachments/assets/53e10c2d-a038-4398-abef-68fadf3e2ff8" />
+<img width="1591" height="353" alt="image" src="https://github.com/user-attachments/assets/d529f163-97ef-43d2-b86f-2f213edace4f" />
 
 Para poder montar este disco de red en nuestra máquina, necesitamos editar el Grupo de Seguridad de nuestra instancia EC2, añadiendo una regla que permita el tráfico NFS (puerto 2049) hacia/desde el EFS.
 
-> 📷 **[Captura 33: Edición de reglas de entrada en el Grupo de Seguridad para EFS]**
-> <img width="1611" height="391" alt="image" src="https://github.com/user-attachments/assets/06570c88-be56-4d70-a904-4fdfcdc7611e" />
+<img width="1647" height="456" alt="image" src="https://github.com/user-attachments/assets/be5a3909-9a6c-4534-9483-59b5078f79d2" />
 
 Con el acceso garantizado, volvemos al panel de EFS y copiamos el comando de montaje utilizando la opción de DNS proporcionada por AWS:
 
-> 📷 **[Captura 34: Instrucciones de montaje de EFS vía DNS]**
-> <img width="1794" height="513" alt="image" src="https://github.com/user-attachments/assets/9e454a75-50c6-43d2-8723-1c57fc80f4f8" />
+<img width="1270" height="491" alt="image" src="https://github.com/user-attachments/assets/ce1f3b99-bec0-48d1-a419-b0ed78f647e6" />
 
 Ejecutamos el comando en nuestro servidor por SSH para montarlo. 
 
-> 📷 **[Captura 35: Ejecución del comando de montaje en la terminal]**
-> <img width="1103" height="88" alt="image" src="https://github.com/user-attachments/assets/d8ea6e88-6658-4f88-ba0d-66ba19529ee2" />
+<img width="1452" height="76" alt="image" src="https://github.com/user-attachments/assets/dc6e93a8-0c03-4d27-b6f1-32713b2c22b0" />
 
 Para comprobar que se ha montado correctamente, utilizamos el comando `df -h`:
 
-> 📷 **[Captura 36: Comprobación del almacenamiento con `df -h`]**
-> <img width="1096" height="316" alt="image" src="https://github.com/user-attachments/assets/c2df831e-de37-41cc-b5ae-0808c4a78391" />
+<img width="1428" height="388" alt="image" src="https://github.com/user-attachments/assets/6e237e66-d7b5-49fd-8012-0a52f53a1ac9" />
 
 ---
 
