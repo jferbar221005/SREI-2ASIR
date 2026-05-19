@@ -4,7 +4,7 @@
 
 Para iniciar esta práctica, necesitamos crear una red virtual (VPC) que sirva como base para nuestra infraestructura, alojando dos subredes públicas y dos privadas. Como buena práctica y para evitar conflictos, es recomendable eliminar cualquier recurso previo en AWS para empezar desde cero.
 
-Nos dirigimos al servicio de **VPC** en la consola de AWS y seleccionamos la opción **'VPC y más'** para que el asistente nos facilite la creación de los recursos asociados. Asignaremos el bloque CIDR IPv4 `10.2.0.0/16` y dejaremos desactivada la opción de IPv6.
+Nos dirigimos al servicio de **VPC** en la consola de AWS y seleccionamos la opción **'VPC y más'** para que el asistente nos facilite la creación de los recursos asociados. Asignaremos el bloque CIDR IPv4 `10.8.0.0/16` y dejaremos desactivada la opción de IPv6.
 
 <img width="2025" height="937" alt="image" src="https://github.com/user-attachments/assets/f5759c94-0daf-4530-be05-6f146e683819" />
 
